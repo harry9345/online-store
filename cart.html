@@ -5,19 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>Cart Section</title>
   </head>
-  <body>
+  <body onload="checkLocalStorage()">
     <section class="main">
       <div class="welcome">
-        <h3>Welcome to my Online Store</h3>
-        <a href="./cart.html">To My Cart</a>
+        <h1>Welcome to my Online Store</h1>
+        <a href="./index.html"> Back Shop </a>
       </div>
-      <div class="productSide">
-        <div id="productsDiv" class="productsDiv">
-          <button class="prev" onclick="plusSlide(-1)">&#10094;</button>
-          <button class="next" onclick="plusSlide(1)">&#10095;</button>
-        </div>
+
+      <div id="cartSide" class="cartSide">
+        <div id="cart"></div>
       </div>
     </section>
 
